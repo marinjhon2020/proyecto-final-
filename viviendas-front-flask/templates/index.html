@@ -1,0 +1,90 @@
+{% extends "layout.html" %} {% block content %}
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div>
+        <a href="/loginadmin" class="btn btn-block btn-dark">Entrar como administrador</a>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+
+            <img class="d-block w-100" src="{{url_for('static',filename='images/p1.webp')}}" id="slideshowImg" alt="First slide">
+            <!--Photo by Randall Bruder on Unsplash-->
+            <div class="carousel-caption">
+                <div class="arrowDown">
+                    <a href="#intro"><img src="{{url_for('static',filename='images/arrow.png')}}" alt="Image Not Available" width="32px" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="{{url_for('static',filename='images/p2.webp')}}" id="slideshowImg" alt="Second slide">
+            <!-- Photo by rawpixel on Unsplash -->
+
+            <div class="carousel-caption">
+
+                <div class="arrowDown">
+                    <a href="#intro"><img src="{{url_for('static',filename='images/arrow.png')}}" alt="Image Not Available" width="32px" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="{{url_for('static',filename='images/p3.webp')}}" id="slideshowImg" alt="Third slide">
+            <!-- Photo by Rowan Heuvel on Unsplash -->
+            <div class="carousel-caption">
+                <div class="arrowDown">
+                    <a href="#intro"><img src="{{url_for('static',filename='images/arrow.png')}}" alt="Image Not Available" width="32px" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<br/><br/><br/>
+<!-- Who we are -->
+<section id="intro">
+    <div class="container">
+        <hr class="myHr">
+        <br/>
+        <div class="row">
+            <!-- Image -->
+            <br/>
+        </div>
+        <div class="row myTrioText">
+            <!-- Our Text -->
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, delectus totam provident consectetur quas reiciendis beatae similique, repellendus ratione quis ullam corrupti libero. Rem obcaecati consectetur
+                quae temporibus unde pariatur!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- End Who we are -->
+<br/><br/><br/>
+<!-- Quote -->
+<div class="container-fluid noMargin">
+    <div class="row myQuoteImg">
+        <br/><br/><br/><br/><br/>
+    </div>
+</div>
+<!-- End Quote -->
+<br/><br/><br/>
+<!-- what we have done -->
+<div class="container-fluid noMargin">
+    <h2 align="center"> What we have done </h2>
+    <p align="center">Some official work webvivienda place.com has done</p>
+    <hr class="myHr"> {% endblock %}

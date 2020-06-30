@@ -1,0 +1,29 @@
+{% extends "layoutadmin.html" %} {% block content %}
+<form action="/editproperty?id={{property['_id']}}" method='POST'>
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" value="{{property['title']}}" placeholder="title" name='title'>
+    </div>
+    <div class="form-group">
+        <label for="">Type</label>
+        <input type="text" class="form-control" value="{{property['type']}}" placeholder="type" name='type'>
+    </div>
+    <div class="form-group">
+        <label for="">address</label>
+        <input type="text" class="form-control" value="{{property['address']}}" placeholder="address" name='address'>
+    </div>
+    <div class="form-group">
+        <label for="">rooms</label>
+        <input type="number" class="form-control" value="{{property['rooms']}}" placeholder="rooms" name='rooms'>
+    </div>
+    <div class="form-group">
+        <label for="">price</label>
+        <input type="number" class="form-control" value="{{property['price']}}" placeholder="price" name='price'>
+    </div>
+    <div class="form-group">
+        <label for="">area</label>
+        <input type="number" class="form-control" value="{{property['area']}}" placeholder="area" name='area'>
+    </div>
+    <button type="submit" class="btn btn-group btn-dark">Editar</button>
+</form>
+{% endblock %}

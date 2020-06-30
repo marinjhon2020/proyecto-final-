@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block content %}
+<form class="formulario" method="POST" action="/logeo">
+
+    <h1>login</h1>
+    <div class="contenedor">
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" class="form-control" placeholder="Correo Eletronico" name="email" />
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" class="form-control" placeholder="password" name="password" />
+        </div>
+        <button type='submit' class="button">Iniciar sesión</button>
+        <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p>¿No tienes una cuenta? <a class="link" href="/registro">Registrate </a></p>
+
+    </div>
+</form>
+{% endblock %}

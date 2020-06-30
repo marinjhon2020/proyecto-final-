@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "layout.html" %} {% block content %}
+
+<div class="detail__container">
+    <div class="detail__left">
+        titulo:
+        <h1>{{property['title']}}</h1>
+        tipo:
+        <p>{{property['type']}}</p>
+        direccion:
+        <p>{{property['address']}}</p>
+        habitaciones:
+        <p>{{property['rooms']}}</p>
+        precio:
+        <p>S/ {{property['price']}}</p>
+        area:
+        <p>{{property['area']}}</p>
+    </div>
+    <div class="detail__right">
+        <img src="" alt="imagen">
+    </div>
+</div>
+
+{% endblock %}

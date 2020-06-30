@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Web Design and Development">
+    <meta name="keywords" content="web design, HTML, CSS, Create Website, JavaScript, website business">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>webvivienda.com</title>
+
+
+</head>
+
+<body>
+    <form class="formulario" method="POST" action="/loginadminuser">
+
+        <h1>login administrador</h1>
+        <div class="contenedor">
+
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" class="form-control" placeholder="Correo Eletronico" name="email" />
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" class="form-control" placeholder="password" name="password" />
+            </div>
+            <button type='submit' class="button">Iniciar sesión</button>
+        </div>
+        <a href="/registeradmin">Registrarse como administrador</a>
+    </form>
+
+</body>
+
+</html>

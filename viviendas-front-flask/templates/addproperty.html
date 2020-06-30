@@ -1,0 +1,32 @@
+{% extends "layoutadmin.html" %} {% block content %}
+<form action="/addproperty" method='POST'>
+    <div>
+        <h2>Inmuebles</h2>
+    </div>
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" placeholder="title" name='title'>
+    </div>
+    <div class="form-group">
+        <label for="">Type</label>
+        <input type="text" class="form-control" placeholder="type" name='type'>
+    </div>
+    <div class="form-group">
+        <label for="">address</label>
+        <input type="text" class="form-control" placeholder="address" name='address'>
+    </div>
+    <div class="form-group">
+        <label for="">rooms</label>
+        <input type="number" class="form-control" placeholder="rooms" name='rooms'>
+    </div>
+    <div class="form-group">
+        <label for="">price</label>
+        <input type="number" class="form-control" placeholder="price" name='price'>
+    </div>
+    <div class="form-group">
+        <label for="">area</label>
+        <input type="number" class="form-control" placeholder="area" name='area'>
+    </div>
+    <button type="submit" class="btn btn-group btn-dark">crear</button>
+</form>
+{% endblock %}
